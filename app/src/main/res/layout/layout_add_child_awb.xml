@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:minHeight="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="运单号码"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/fsearch_et_child_awb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="25dp"
+            android:layout_marginLeft="5dp"
+            android:hint="子运单号码"
+            android:paddingLeft="5dp"
+            android:textSize="13sp"
+            android:inputType="number"
+            android:background="@drawable/shape_add_awb_et" />
+        <ImageView
+            android:clickable="true"
+            android:scaleType="center"
+            android:id="@+id/fsearch_btn_scan"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@mipmap/scan"/>
+    </LinearLayout>
+</LinearLayout>
